@@ -25,8 +25,10 @@ body {
 	align-items: center;
 	flex-wrap: wrap;
 	background-color: var(--backgroudcolor-primianry);
+	// gap: 1px;
 
 	.tile {
+		position: relative;
 		padding: 0px 24px 0px 24px;
 		width: 343px;
 		height: 486px;
@@ -39,12 +41,24 @@ body {
 		background-position-x: -40px;
 		border-radius: 20px;
 
+		.stroke {
+			position: absolute;
+			top: 406px;
+			left: 50%;
+			width: calc(100% - 48px);
+			transform: translate(-50%, -50%);
+			height: 1px;
+			background-color: var(--backgroudcolor-stroke);
+		}
+
 		.tile-top {
 			width: 100%;
 			height: 410px;
 			display: flex;
 			flex-direction: column-reverse;
 			padding-bottom: 24px;
+			gap: 24px;
+
 			.value-data {
 				height: 26px;
 				width: 100%;
@@ -53,7 +67,7 @@ body {
 				justify-content: start;
 				align-items: center;
 				// background-color: #11a62c55;
-				gap: 84px;
+				gap: 85px;
 
 				.value-data-quantity {
 					display: flex;
@@ -75,7 +89,7 @@ body {
 						font-weight: 700;
 						font-size: 16px;
 						line-height: 160%;
-            letter-spacing: -0.01em;
+						letter-spacing: -0.01em;
 						color: var(--color-primary);
 					}
 				}
@@ -96,20 +110,41 @@ body {
 						background-size: contain;
 					}
 					.value-data-time-term {
+						// padding-left: 1px;
 						font-style: normal;
 						font-weight: 500;
 						font-size: 14px;
 						line-height: 160%;
-            letter-spacing: -0.01em;
+						letter-spacing: -0.01em;
 						color: var(--color-body-text);
 					}
 				}
 			}
-			// .squere2{
-			//   height: 100px;
-			//   width: 100px;
-			//   background-color: red;
-			// }
+
+			.discription {
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
+				// background-color: #97d0133e;
+				color: var(--color-title);
+				h1 {
+					font-family: 'Manrope', serif;
+					margin: 0;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 24px;
+					line-height: 33px;
+				}
+				.body1 {
+					font-family: 'Manrope';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 160%;
+					letter-spacing: -0.01em;
+					color: var(--color-body-text);
+				}
+			}
 		}
 
 		// .author {
@@ -140,41 +175,5 @@ body {
 		//     }
 		//   }
 		// }
-		.vector {
-			height: 1px;
-			width: 100%;
-			background-color: var(--backgroudcolor-stroke);
-		}
-
-		// .value-data{
-		//   height: 26px;
-		//   width: 106px;
-		//   display: flex;
-		//   flex-direction: row;
-		//   align-items: center;
-		//   justify-content: center;
-		//   // background-color: #fff;
-
-		//   .value-data-quantity{
-		//     width: 100%;
-		//     height: 100%;
-		//     display: flex;
-		//     gap: 10px;
-		//     color: var(--color-primary);
-
-		//     .value-data-icon{
-		//       width: 20px;
-		//       height: 20px;
-		//       background-image: url('/public/images/diamonds.png');
-		//       background-position: center;
-		//       background-size: contain;
-		//       // background-color: red;
-		//     }
-		//   }
-		// }
 	}
 }
-
-// p {
-// 	color: var(--color-on-surface);
-// }

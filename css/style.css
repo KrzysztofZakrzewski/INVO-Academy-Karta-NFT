@@ -383,6 +383,7 @@ body {
 }
 
 #home-page .tile {
+  position: relative;
   padding: 0px 24px 0px 24px;
   width: 343px;
   height: 486px;
@@ -401,6 +402,17 @@ body {
   border-radius: 20px;
 }
 
+#home-page .tile .stroke {
+  position: absolute;
+  top: 406px;
+  left: 50%;
+  width: calc(100% - 48px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 1px;
+  background-color: var(--backgroudcolor-stroke);
+}
+
 #home-page .tile .tile-top {
   width: 100%;
   height: 410px;
@@ -412,6 +424,7 @@ body {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   padding-bottom: 24px;
+  gap: 24px;
 }
 
 #home-page .tile .tile-top .value-data {
@@ -430,7 +443,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 84px;
+  gap: 85px;
 }
 
 #home-page .tile .tile-top .value-data .value-data-quantity {
@@ -499,9 +512,34 @@ body {
   color: var(--color-body-text);
 }
 
-#home-page .tile .vector {
-  height: 1px;
-  width: 100%;
-  background-color: var(--backgroudcolor-stroke);
+#home-page .tile .tile-top .discription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  color: var(--color-title);
+}
+
+#home-page .tile .tile-top .discription h1 {
+  font-family: 'Manrope', serif;
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+#home-page .tile .tile-top .discription .body1 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+  color: var(--color-body-text);
 }
 /*# sourceMappingURL=style.css.map */
