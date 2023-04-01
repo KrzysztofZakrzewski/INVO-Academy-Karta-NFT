@@ -347,7 +347,7 @@ template {
   --backgroudcolor-box: #13243C;
   --color-primary: #04fcfa;
   --color-title: #ffffff;
-  --color-body-text: #9293b9;
+  --color-body-text: #9293B9;
   -color-stroke-text: #2b3953;
   --color-on-surface: #000;
 }
@@ -383,13 +383,49 @@ body {
 }
 
 #home-page .tile {
+  padding: 20px 24px;
   width: 343px;
   height: 486px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   background-color: var(--backgroudcolor-box);
   background-image: url("/public/images/frame1000003598.jpg");
   background-repeat: no-repeat;
   background-position-x: -40px;
   border-radius: 20px;
+}
+
+#home-page .tile .author {
+  height: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+#home-page .tile .author .author-img {
+  width: 40px;
+  height: 40px;
+  background-image: url("/public/images/Frame1000003602.png");
+  background-position: center;
+  background-size: contain;
+}
+
+#home-page .tile .author .author-name {
+  color: var(--color-body-text);
+}
+
+#home-page .tile .author .author-name span {
+  color: var(--color-title);
 }
 
 p {

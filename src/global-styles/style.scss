@@ -1,9 +1,9 @@
 /// Main Styles File
 /// Here we import all the global Styles files we need for our project.
 
-@import "styles/normalize.scss";
-@import "styles/root.scss";
-@import "styles/fonts.scss";
+@import 'styles/normalize.scss';
+@import 'styles/root.scss';
+@import 'styles/fonts.scss';
 
 *,
 *::before,
@@ -14,33 +14,60 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  // color: var(--color-primary);
+	font-family: 'Roboto', sans-serif;
+	// color: var(--color-primary);
 }
 // :root{
 //   --backgroudcolor-priminary: #1E1E1E;
 // }
 
-#home-page{
-  min-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: var(--backgroudcolor-primianry);
+#home-page {
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: var(--backgroudcolor-primianry);
 
-  .tile{
-    width: 343px;
-    height: 486px;
-    background-color: var(--backgroudcolor-box);
-    background-image: url('/public/images/frame1000003598.jpg');
-    background-repeat: no-repeat;
-    background-position-x: -40px;
-    border-radius: 20px;
-  }
+	.tile {
+		padding: 20px 24px;
+		width: 343px;
+		height: 486px;
+		display: flex;
+		flex-direction: column-reverse;
+		background-color: var(--backgroudcolor-box);
+		background-image: url('/public/images/frame1000003598.jpg');
+		background-repeat: no-repeat;
+		background-position-x: -40px;
+		border-radius: 20px;
+
+		.author {
+			height: 40px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+      gap: 16px;
+			// background-color: #fff;
+			.author-img {
+				width: 40px;
+				height: 40px;
+				background-image: url('/public/images/Frame1000003602.png');
+				background-position: center;
+				background-size: contain;
+			}
+
+      .author-name{
+        color: var(--color-body-text);
+
+        span{
+          color: var(--color-title)
+        }
+      }
+		}
+	}
 }
 
 p {
-  color: var(--color-on-surface);
+	color: var(--color-on-surface);
 }
