@@ -14,12 +14,8 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	// color: var(--color-primary);
+	font-family: 'Manrope', sans-serif;
 }
-// :root{
-//   --backgroudcolor-priminary: #1E1E1E;
-// }
 
 #home-page {
 	min-width: 100vw;
@@ -31,43 +27,136 @@ body {
 	background-color: var(--backgroudcolor-primianry);
 
 	.tile {
-		padding: 20px 24px;
+		padding: 0px 24px 0px 24px;
 		width: 343px;
 		height: 486px;
 		display: flex;
-		flex-direction: column-reverse;
+		gap: 20px;
+		flex-direction: column;
 		background-color: var(--backgroudcolor-box);
 		background-image: url('/public/images/frame1000003598.jpg');
 		background-repeat: no-repeat;
 		background-position-x: -40px;
 		border-radius: 20px;
 
-		.author {
-			height: 40px;
+		.tile-top {
 			width: 100%;
+			height: 410px;
 			display: flex;
-			align-items: center;
-      gap: 16px;
-			// background-color: #fff;
-			.author-img {
-				width: 40px;
-				height: 40px;
-				background-image: url('/public/images/Frame1000003602.png');
-				background-position: center;
-				background-size: contain;
+			flex-direction: column-reverse;
+      padding-bottom: 24px;
+			.value-data {
+				height: 26px;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: start;
+				align-items: center;
+				// background-color: #11a62c55;
+				gap: 74px;
+
+				.value-data-quantity {
+					display: flex;
+					justify-content: start;
+					align-items: center;
+					width: 120px;
+					height: 100%;
+					gap: 10px;
+					// background-color: rgb(26, 26, 157);
+
+					.value-data-quantity-ico {
+						height: 20px;
+						width: 20px;
+						// background-color: #470d0d;
+						background-image: url('/public/images/diamonds.png');
+						background-position: center;
+						background-size: contain;
+					}
+
+					.value-data-quantity-amount {
+						font-style: normal;
+						font-weight: 700;
+						font-size: 16px;
+						line-height: 160%;
+						color: var(--color-primary);
+					}
+				}
+				.sq {
+					height: 100%;
+					width: 30px;
+					background-color: red;
+				}
 			}
-
-      .author-name{
-        color: var(--color-body-text);
-
-        span{
-          color: var(--color-title)
-        }
-      }
+			// .squere2{
+			//   height: 100px;
+			//   width: 100px;
+			//   background-color: red;
+			// }
 		}
+
+		// .author {
+		// 	height: 40px;
+		// 	width: 100%;
+		// 	display: flex;
+		// 	align-items: center;
+		//   gap: 16px;
+		// 	// background-color: #fff;
+		// 	.author-img {
+		// 		width: 40px;
+		// 		height: 40px;
+		// 		background-image: url('/public/images/Frame1000003602.png');
+		// 		background-position: center;
+		// 		background-size: contain;
+		// 	}
+
+		//   .author-name{
+		//     color: var(--color-body-text);
+		//     font-size: 14px;
+		//     font-weight: 500;
+		//     line-height: 160%;
+		//     // letter-spacing: -0.1px;
+		//     letter-spacing: -1%;
+
+		//     span{
+		//       color: var(--color-title)
+		//     }
+		//   }
+		// }
+		.vector {
+			height: 1px;
+			width: 100%;
+			background-color: var(--backgroudcolor-stroke);
+		}
+
+		// .value-data{
+		//   height: 26px;
+		//   width: 106px;
+		//   display: flex;
+		//   flex-direction: row;
+		//   align-items: center;
+		//   justify-content: center;
+		//   // background-color: #fff;
+
+		//   .value-data-quantity{
+		//     width: 100%;
+		//     height: 100%;
+		//     display: flex;
+		//     gap: 10px;
+		//     color: var(--color-primary);
+
+		//     .value-data-icon{
+		//       width: 20px;
+		//       height: 20px;
+		//       background-image: url('/public/images/diamonds.png');
+		//       background-position: center;
+		//       background-size: contain;
+		//       // background-color: red;
+		//     }
+		//   }
+		// }
 	}
 }
 
-p {
-	color: var(--color-on-surface);
-}
+// p {
+// 	color: var(--color-on-surface);
+// }
