@@ -343,13 +343,50 @@ template {
 }
 
 :root {
-  --color-primary: #5721f2;
+  --backgroudcolor-primianry: #0c1829;
+  --backgroudcolor-box: #3f5067;
+  --color-primary: #04fcfa;
+  --color-title: #ffffff;
+  --color-body-text: #9293b9;
+  -color-stroke-text: #2b3953;
   --color-on-surface: #000;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--color-primary);
+}
+
+#home-page {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: var(--backgroudcolor-primianry);
+}
+
+#home-page .tile {
+  width: 343px;
+  height: 486px;
+  background-color: var(--backgroudcolor-box);
+  border-radius: 20px;
 }
 
 p {

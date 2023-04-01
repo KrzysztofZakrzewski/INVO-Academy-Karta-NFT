@@ -1,5 +1,10 @@
 :root {
-  --color-primary: #5721f2;
+  --backgroudcolor-primianry: #0c1829;
+  --backgroudcolor-box: #3f5067;
+  --color-primary: #04fcfa;
+  --color-title: #ffffff;
+  --color-body-text: #9293b9;
+  -color-stroke-text: #2b3953;
   --color-on-surface: #000;
 }
 /*# sourceMappingURL=root.css.map */
