@@ -44,7 +44,7 @@ body {
 			height: 410px;
 			display: flex;
 			flex-direction: column-reverse;
-      padding-bottom: 24px;
+			padding-bottom: 24px;
 			.value-data {
 				height: 26px;
 				width: 100%;
@@ -53,21 +53,18 @@ body {
 				justify-content: start;
 				align-items: center;
 				// background-color: #11a62c55;
-				gap: 74px;
+				gap: 84px;
 
 				.value-data-quantity {
 					display: flex;
 					justify-content: start;
 					align-items: center;
-					width: 120px;
 					height: 100%;
 					gap: 10px;
-					// background-color: rgb(26, 26, 157);
 
 					.value-data-quantity-ico {
 						height: 20px;
 						width: 20px;
-						// background-color: #470d0d;
 						background-image: url('/public/images/diamonds.png');
 						background-position: center;
 						background-size: contain;
@@ -78,13 +75,34 @@ body {
 						font-weight: 700;
 						font-size: 16px;
 						line-height: 160%;
+            letter-spacing: -0.01em;
 						color: var(--color-primary);
 					}
 				}
-				.sq {
-					height: 100%;
-					width: 30px;
-					background-color: red;
+				.value-data-time {
+					height: 22px;
+					// width: 30px;
+					display: flex;
+					flex-direction: row;
+					justify-content: start;
+					align-items: center;
+					gap: 10px;
+					// background-color: red;
+					.value-data-time-ico {
+						height: 20px;
+						width: 20px;
+						background-image: url('/public/images/clock.png');
+						background-position: center;
+						background-size: contain;
+					}
+					.value-data-time-term {
+						font-style: normal;
+						font-weight: 500;
+						font-size: 14px;
+						line-height: 160%;
+            letter-spacing: -0.01em;
+						color: var(--color-body-text);
+					}
 				}
 			}
 			// .squere2{
