@@ -586,4 +586,43 @@ body {
   background: linear-gradient(180deg, rgba(19, 36, 59, 0) 0%, rgba(19, 36, 59, 0.74) 61.98%, #13243b 100%);
   z-index: 1;
 }
+
+@media (min-width: 1200px) {
+  #home-page .tile-base {
+    position: relative;
+    width: 413px;
+    height: 556px;
+    background-image: url("/public/images/Frame10desctop.jpg");
+  }
+  #home-page .tile-base .tile {
+    padding: 24px 32px;
+  }
+  #home-page .tile-base .tile .discription {
+    margin-top: 10px;
+  }
+  #home-page .tile-base .tile .value-data {
+    margin-top: 40px;
+  }
+  #home-page .tile-base .tile .value-data__quantity--amount {
+    font-size: 18px;
+  }
+  #home-page .tile-base .tile .value-data__time {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0px;
+  }
+  #home-page .tile-base .tile .value-data__time--term {
+    font-size: 16px;
+  }
+  #home-page .tile-base .tile .stroke {
+    margin-top: 22px;
+  }
+  #home-page .tile-base .tile .tile-bottom {
+    margin-top: 24px;
+  }
+  #home-page .tile-base .tile .tile-bottom .author-name {
+    font-size: 16px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
