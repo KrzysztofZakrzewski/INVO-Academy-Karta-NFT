@@ -67,6 +67,7 @@ body {
 				line-height: 160%;
 				letter-spacing: -0.01em;
 				color: var(--color-body-text);
+				// add (...) when text is biger than 3 line of space
 				display: -webkit-box;
 				-webkit-box-orient: vertical;
 				overflow: hidden;
@@ -140,11 +141,13 @@ body {
 					}
 				}
 			}
+
 			.stroke {
 				margin-top: 10px;
 				height: 1px;
 				background-color: var(--backgroudcolor-stroke);
 			}
+
 			.tile-bottom {
 				margin-top: 20px;
 				height: 40px;
@@ -154,6 +157,7 @@ body {
 				justify-content: start;
 				align-content: end;
 				gap: 16px;
+
 				.author-img {
 					width: 40px;
 					height: 40px;
@@ -204,19 +208,24 @@ body {
 			width: 413px;
 			height: 556px;
 			background-image: url('/public/images/Frame10desctop.jpg');
+
 			.tile {
 				padding: 24px 32px;
+
 				.discription {
 					margin-top: 10px;
 				}
+
 				.value-data {
 					margin-top: 40px;
+
 					&__quantity {
 						// margin-right: 120px;
 						&--amount {
 							font-size: 18px;
 						}
 					}
+
 					&__time {
 						justify-content: center;
 						margin-right: 0px;
@@ -225,12 +234,14 @@ body {
 						}
 					}
 				}
+
 				.stroke {
 					margin-top: 22px;
 				}
+
 				.tile-bottom {
 					margin-top: 24px;
-					// margin-left: 6px;
+
 					.author-name {
 						font-size: 16px;
 					}
