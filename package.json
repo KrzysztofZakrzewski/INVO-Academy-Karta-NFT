@@ -11,5 +11,47 @@
   "devDependencies": {
     "sass": "^1.58.0",
     "vite": "^4.1.0"
-  }
+  },
+  "description": "In order to see this file in preview mode in VS Code, press ```Ctrl + Shift + V```",
+  "main": "vite.config.js",
+  "dependencies": {
+    "anymatch": "^3.1.3",
+    "chokidar": "^3.5.3",
+    "binary-extensions": "^2.2.0",
+    "braces": "^3.0.2",
+    "esbuild": "^0.16.17",
+    "glob-parent": "^5.1.2",
+    "fill-range": "^7.0.1",
+    "function-bind": "^1.1.1",
+    "is-binary-path": "^2.1.0",
+    "has": "^1.0.3",
+    "is-core-module": "^2.11.0",
+    "immutable": "^4.2.4",
+    "path-parse": "^1.0.7",
+    "is-glob": "^4.0.3",
+    "is-extglob": "^2.1.1",
+    "is-number": "^7.0.0",
+    "nanoid": "^3.3.4",
+    "normalize-path": "^3.0.0",
+    "picocolors": "^1.0.0",
+    "picomatch": "^2.3.1",
+    "readdirp": "^3.6.0",
+    "postcss": "^8.4.21",
+    "rollup": "^3.15.0",
+    "resolve": "^1.22.1",
+    "source-map-js": "^1.0.2",
+    "supports-preserve-symlinks-flag": "^1.0.0",
+    "to-regex-range": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrzysztofZakrzewski/INVO-Academy-Karta-NFT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KrzysztofZakrzewski/INVO-Academy-Karta-NFT/issues"
+  },
+  "homepage": "https://github.com/KrzysztofZakrzewski/INVO-Academy-Karta-NFT#readme"
 }
